@@ -18,9 +18,7 @@ async function fetchUserData() {
     } catch (error) {
         console.error('Error fetching user data:', error);
         dataContainer.innerHTML = '';
-        const errorMessage = document.createElement('p');
-        errorMessage.textContent = 'Failed to fetch user data.';
-        dataContainer.appendChild(errorMessage);
+        dataContainer.textContent = 'Failed to load user data.';
     }
 }
 
